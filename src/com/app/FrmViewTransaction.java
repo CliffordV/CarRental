@@ -45,7 +45,6 @@ public class FrmViewTransaction extends javax.swing.JFrame {
                 int id= Integer.parseInt(rs.getString("id"));
                 
                 genID = id+1;
-//                this.txtID.setText(String.valueOf(genID));
             }
             if(genID == 1){
                 this.txtID.setText(String.valueOf(genID));
@@ -74,46 +73,6 @@ public class FrmViewTransaction extends javax.swing.JFrame {
            System.out.println("error: " + e.getMessage());
        }
     }
-    
-//    private void Customer(){
-//       String search = cbCustomer.getSelectedItem().toString();
-//       try{
-//            SQLite.conn = getConnection(SQLite.url);
-//            SQLite.stmt = SQLite.conn.createStatement();
-//            String query = "select * from customer where id=" + search;
-//
-//            ResultSet rs = SQLite.stmt.executeQuery(query);
-//            while(rs.next()){
-//                String CusFname= rs.getString("CusFname");
-//                String CusLname = rs.getString("CusLname");
-//                txtCusFname.setText(CusFname);
-//                txtCusLname.setText(CusLname);
-//            }
-//       }
-//       catch(Exception e){
-//           System.out.println("ComboBox Error Customer: " + e.getMessage());
-//       }
-//    }
-//    
-//    private void Cashier(){
-//       String search = cbCashier.getSelectedItem().toString();
-//       try{
-//            SQLite.conn = getConnection(SQLite.url);
-//            SQLite.stmt = SQLite.conn.createStatement();
-//            String query = "select * from cashier where id=" + search;
-//
-//            ResultSet rs = SQLite.stmt.executeQuery(query);
-//            while(rs.next()){
-//                String CFname= rs.getString("CFname");
-//                String CLname = rs.getString("CLname");
-//                txtCFname.setText(CFname);
-//                txtCLname.setText(CLname);
-//            }
-//       }
-//       catch(Exception e){
-//           System.out.println("ComboBox Error Cashier: " + e.getMessage());
-//       }
-//    }
     
     private void Client(){
        try{
